@@ -135,4 +135,4 @@ jobs:
           # echo " snyk-check     | $SNYK_STATUS |" >> $GITHUB_STEP_SUMMARY
           echo '' >> $GITHUB_STEP_SUMMARY
 
-          echo '## Job ran by: ${{ github.actor }}' >> $GITHUB_STEP_SUMMARY
+          echo '## Job ran by: ${{ github.actor }}' >> $GITHUB_STEP_SUMMARY# trigger workflow update
