@@ -1,11 +1,20 @@
 terraform {
+  required_version = ">= 1.14"
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+
+    archive = {
+      source  = "hashicorp/archive"
+      version = "~> 2.7.0"
+    }
   }
 }
 
 # Configure the AWS Provider
-provider "aws" {}
+provider "aws" {
+  region = "ap-southeast-1"
+}
