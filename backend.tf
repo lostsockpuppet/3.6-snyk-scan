@@ -1,4 +1,3 @@
-# Comment out the below if you are working on local
 
 terraform {
   backend "s3" {
